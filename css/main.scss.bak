@@ -1,4 +1,5 @@
-//bootstrap
+//Плагины
+@import 'sass/plagins/fancybox';
 @import 'sass/plagins/bootstrap';
 //Функции и переменные
 @import 'sass/root/setting';
@@ -20,5 +21,3 @@
 
 //Мобильная версия
 
-//Плагины
-@import 'sass/plagins/fancybox';
