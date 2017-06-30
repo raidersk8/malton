@@ -1,3 +1,5 @@
+//bootstrap
+@import 'sass/plagins/bootstrap';
 //Функции и переменные
 @import 'sass/root/setting';
 //Вспомогательные стили для верстки 
@@ -19,4 +21,4 @@
 //Мобильная версия
 
 //Плагины
-//@import 'sass/plagins/fancybox';
+@import 'sass/plagins/fancybox';
