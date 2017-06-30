@@ -44,6 +44,11 @@ function theme_name_scripts() {
 	wp_enqueue_script( 'mousewheel', get_template_directory_uri() . '/fancybox/lib/jquery.mousewheel.pack.js' );
 	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/fancybox/source/jquery.fancybox.pack.js' );	
 	
+	//fullpage	
+	wp_enqueue_script( 'easings', get_template_directory_uri() . '/js/fullpage/jquery.easings.min.js' );
+	wp_enqueue_script( 'scrolloverflow', get_template_directory_uri() . '/js/fullpage/scrolloverflow.min.js' );
+	wp_enqueue_script( 'fullPage', get_template_directory_uri() . '/js/fullpage/jquery.fullPage.min.js' );
+	
 	//Паралакс плагин
 	wp_enqueue_script( 'stellar', get_template_directory_uri() . '/js/jquery.stellar-paralax.min.js' );	
 	
