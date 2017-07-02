@@ -6685,15 +6685,18 @@ button.close {
 
 .vertical-middle {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 100%; }
 
 .vertical-top {
   display: table-cell;
-  vertical-align: top; }
+  vertical-align: top;
+  width: 100%; }
 
 .vertical-bottom {
   display: table-cell;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  width: 100%; }
 
 .table-row {
   display: table-row; }
@@ -6900,6 +6903,8 @@ footer {
   letter-spacing: 1px; }
 
 .front-page .first-screen .left-text {
+  position: relative;
+  left: auto !important;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 48px;
   line-height: 70px;
@@ -6909,7 +6914,7 @@ footer {
 .front-page .first-screen .border-bottom {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 50% !important;
   width: 420px;
   height: 520px;
   border: 2px solid #E1CDC8;

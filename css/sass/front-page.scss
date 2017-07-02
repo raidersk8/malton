@@ -11,6 +11,8 @@
 	letter-spacing: 1px;
 }
 .front-page .first-screen .left-text {
+	position: relative;
+	left: auto !important;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 48px;
 	line-height: 70px;
@@ -20,7 +22,7 @@
 .front-page .first-screen .border-bottom {
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 50% !important;
 	width: 420px;
 	height: 520px;
 	border: 2px solid #E1CDC8;

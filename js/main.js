@@ -11,10 +11,10 @@ $( window ).resize(function() {
 $(function() {
 	//Постраничный слайдер на весь экран
 	$('#fullpage').fullpage({
-		scrollBar: true,
-	});
-	//Паралакс
-	$('body').stellar();
+		scrollBar: true,	
+		hideElement: function($elem) { $elem.show(); },
+	});	
+		$.stellar();
 });
 function fullWindowHeight() {
 	//Делаем блоки с классом full-window-height на всю ширину
