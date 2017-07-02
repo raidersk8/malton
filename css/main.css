@@ -6890,7 +6890,8 @@ footer {
 .front-page .first-screen {
   position: relative;
   background: url(../img/front-page-first-screen-bg.png) left top no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 .front-page .first-screen .logo-text {
   border-color: transparent;
@@ -6914,6 +6915,10 @@ footer {
   border: 2px solid #E1CDC8;
   border-bottom: 0;
   margin-left: -210px; }
+
+.front-page .first-screen .center-img {
+  position: relative;
+  left: auto !important; }
 
 .fancybox-nav {
   width: 36px;

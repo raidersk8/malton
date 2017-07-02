@@ -1,5 +1,5 @@
 <div class="first-screen full-height light-text">
-	<div class="border-bottom"></div>
+	<div class="border-bottom" data-stellar-ratio="0.1"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4">
@@ -28,7 +28,7 @@
 			<div class="col-xs-4 text-center full-window-height">
 				<div class="wrap-vertical-position">
 					<div class="vertical-bottom">
-						<img src="<?php echo get_bloginfo('template_url'); ?>/img/front-page-first-screen-center-img.png" alt="" />
+						<img class="center-img" data-stellar-ratio="0.5" src="<?php echo get_bloginfo('template_url'); ?>/img/front-page-first-screen-center-img.png" alt="" />
 					</div>
 				</div>
 			</div>

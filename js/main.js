@@ -9,8 +9,12 @@ $( window ).resize(function() {
 	fullWindowHeight();
 });
 $(function() {
+	//Постраничный слайдер на весь экран
 	$('#fullpage').fullpage({
+		scrollBar: true,
 	});
+	//Паралакс
+	$('body').stellar();
 });
 function fullWindowHeight() {
 	//Делаем блоки с классом full-window-height на всю ширину
