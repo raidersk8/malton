@@ -66,3 +66,30 @@
 	display: block;
 	margin: 0 0 10px;
 }
+.navigate-panel .fullpage-nav {
+	padding: 41px 0 16px 5px;
+}
+.navigate-panel .fullpage-nav .moveSectionDown {
+	display: inline-block;
+	position: relative;
+	top: -7px;
+	@include bottom-arrow (2px, 22px, 22px, #C4C4C4);
+}
+.navigate-panel .fullpage-nav .moveSectionDown.inactive {
+	@include bottom-arrow (2px, 22px, 22px, #907E8A);
+}
+.navigate-panel .fullpage-nav .moveSectionUp {
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	@include top-arrow (2px, 22px, 22px, #C4C4C4);
+}
+.navigate-panel .fullpage-nav .moveSectionUp.inactive {
+	@include top-arrow (2px, 22px, 22px, #907E8A);
+}
+.navigate-panel .bottom-text {
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.6px;
+    padding-bottom: 34px;
+}

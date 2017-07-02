@@ -9,7 +9,8 @@ $( window ).resize(function() {
 	fullWindowHeight();
 });
 $(function() {
-	$('#fullpage').fullpage();
+	$('#fullpage').fullpage({
+	});
 });
 function fullWindowHeight() {
 	//Делаем блоки с классом full-window-height на всю ширину
