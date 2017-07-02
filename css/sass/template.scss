@@ -4,6 +4,7 @@
 	height: 40px;
 	background: url(../svg/logo-dark.svg) 0px 0px no-repeat;
 	background-size: 100% auto;
+	border: none;
 }
 .main-logo-light {
 	display: inline-block;
@@ -11,8 +12,57 @@
 	height: 40px;
 	background: url(../svg/logo-light.svg) 0px 0px no-repeat;
 	background-size: 100% auto;
+	border: none;
 }
 .main-logo-dark.big-logo, .main-logo-light.big-logo {
 	width: 53px;
 	height: 50px;
+}
+
+.light-text {	
+	color: $main-color-2;
+}
+.light-text a {	
+	color: $main-color-2;
+	border-color: #907E8A;
+}
+.light-text a:hover {	
+	color: $main-color-2;
+}
+
+.top-margin-logo {
+	padding-top: 19px;
+}
+.top-margin-logo .logo {
+	margin-top: 6px;
+}
+
+
+.navigate-panel {
+	position: absolute;
+	display: table;
+	top: 0;
+	right: 0;
+	width: 194px;
+	padding-right: 15px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.navigate-panel .phone {
+	font-size: 20px;
+	letter-spacing: 1px;
+    height: 65px;;
+}
+.navigate-panel .left-margin {
+	padding-left: 15px;
+}
+.navigate-panel .menu ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+	font-size: 18px;
+}
+.navigate-panel .menu ul li {
+	display: block;
+	margin: 0 0 10px;
 }

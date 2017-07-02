@@ -1,0 +1,34 @@
+.btn {
+	border-radius: 0;
+	padding: 10px 12px;
+	letter-spacing: 1.5px;
+}
+.btn-transparent, .light-text .btn-transparent {
+  color: #E1CDC8;
+  background-color: transparent;
+  border-color: #E1CDC8;
+}
+.btn-transparent:focus,
+.btn-transparent.focus,
+.light-text .btn-transparent:focus,
+.light-text .btn-transparent.focus {
+  color: #E1CDC8;
+  background-color: transparent;
+  border-color: #E1CDC8;
+}
+.btn-transparent:hover,
+.light-text .btn-transparent:hover {
+  color: #E1CDC8;
+  background-color: transparent;
+  border-color: #E1CDC8;
+}
+.btn-transparent:active,
+.btn-transparent.active,
+.open > .dropdown-toggle.btn-transparent,
+.light-text .btn-transparent:active,
+.light-text .btn-transparent.active,
+.light-text .open > .dropdown-toggle.btn-transparent {
+  color: #E1CDC8;
+  background-color: transparent;
+  border-color: #E1CDC8;
+}

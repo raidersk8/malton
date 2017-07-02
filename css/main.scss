@@ -1,12 +1,15 @@
 //bootstrap
 @import 'sass/plagins/bootstrap';
+//Тут добавляем или модифицируем класы для каждого сайта
+@import 'sass/plagins/bootstrap-modification';
 //Функции и переменные
 @import 'sass/root/setting';
 //Вспомогательные стили для верстки 
 @import 'sass/root/addition-bootstrap';
-//Основные стили для fancybox
 //Стандартные стили ворпресса
 @import 'sass/root/base-wordpress';
+//Дополнительные классы
+@import 'sass/root/total-class';
 
 //Основные стили темы
 @import 'sass/root/base';
@@ -15,11 +18,12 @@
 @import 'sass/front-page';
 
 
-
 //Респонсивность
 
 //Мобильная версия
 
 //Плагины
+
 @import 'sass/plagins/fancybox';
-@import 'sass/plagins/jquery.fullPage';
+
+@import 'sass/plagins/fullPage';

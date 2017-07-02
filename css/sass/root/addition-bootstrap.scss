@@ -7,9 +7,16 @@
 	display: table-cell;
 	vertical-align: middle;
 }
+.vertical-top {
+	display: table-cell;
+	vertical-align: top;
+}
 .vertical-bottom {
 	display: table-cell;
 	vertical-align: bottom;
+}
+.table-row {
+	display: table-row;
 }
 .no-p {
 	padding-left: 0 !important;
