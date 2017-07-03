@@ -4,32 +4,52 @@
     letter-spacing: 0.7px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
-.btn-transparent, .light-text .btn-transparent {
-  color: #E1CDC8;
+.btn-transparent {
+  color: #4D4249;
   background-color: transparent;
   border-color: #E1CDC8;
+}
+.light-text .btn-transparent {
+  color: #E1CDC8;	
 }
 .btn-transparent:focus,
-.btn-transparent.focus,
-.light-text .btn-transparent:focus,
-.light-text .btn-transparent.focus {
-  color: #E1CDC8;
+.btn-transparent.focus {
+  color: #4D4249;
   background-color: transparent;
   border-color: #E1CDC8;
 }
-.btn-transparent:hover,
-.light-text .btn-transparent:hover {
-  color: #E1CDC8;
+.light-text .btn-transparent:focus,
+.light-text .btn-transparent.focus {
+  color: #E1CDC8;	
+}
+.btn-transparent:hover {
+  color: #4D4249;
   background-color: transparent;
   border-color: #E1CDC8;
+}
+.light-text .btn-transparent:hover {
+  color: #E1CDC8;	
+
 }
 .btn-transparent:active,
 .btn-transparent.active,
-.open > .dropdown-toggle.btn-transparent,
+.open > .dropdown-toggle.btn-transparent {
+  color: #4D4249;
+  background-color: transparent;
+  border-color: #E1CDC8;
+}
 .light-text .btn-transparent:active,
 .light-text .btn-transparent.active,
 .light-text .open > .dropdown-toggle.btn-transparent {
-  color: #E1CDC8;
-  background-color: transparent;
-  border-color: #E1CDC8;
+  color: #E1CDC8;	
+}
+
+
+h1, .h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 300;
+	margin: 0;
+	text-transform: uppercase;
 }

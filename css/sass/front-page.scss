@@ -23,13 +23,54 @@
 	position: absolute;
 	bottom: 0;
 	left: 50% !important;
-	width: 420px;
+    width: 422px;
 	height: 520px;
 	border: 2px solid #E1CDC8;
 	border-bottom: 0;
-	margin-left: -210px;
+    margin-left: -211px;
 }
 .front-page .first-screen .center-img {
 	position: relative;
 	left: auto !important;
+}
+.front-page .about {
+	position: relative;
+}
+.front-page .about .top-margin {
+	padding-top: 153px;
+}
+.front-page .about .border-top {
+	position: absolute;
+    top: 0;
+    left: 50% !important;
+    width: 422px;
+    height: 62px;
+    border: 2px solid #E1CDC8;
+    border-top: 0;
+    margin-left: -211px;
+	
+}
+.front-page .about .left-bottom-border {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.front-page .about .left-bottom-border:before {
+	content: '';
+	width: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 2px solid #E1CDC8; 
+}
+.front-page .about .left-bottom-border .container {
+    position: relative;
+	background: #fff;
+}
+.front-page .about .left-bottom-border .inner-border {
+	height: 50px;
+	border: 2px solid #E1CDC8;
+	border-left: none;
+	border-bottom: none;
 }

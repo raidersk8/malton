@@ -9,7 +9,7 @@ body {
 	font-weight: 300;
 	color: $main-color;
 	background: #fff;	
-	background: url(../img/template-main.png) center 0 no-repeat #fff;
+	//background: url(../img/template-main.png) center 0 no-repeat #fff;
 	//height: 5000px;
 }
 a {
@@ -21,6 +21,12 @@ a:hover {
 	text-decoration: none;
 	color: $a-color;
 	border-color: transparent;
+}
+p {
+	margin: 0 0 20px;
+}
+b, strong {
+    font-weight: 400;
 }
 
 html {
