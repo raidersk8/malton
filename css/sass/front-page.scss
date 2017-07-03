@@ -10,15 +10,6 @@
 	font-size: 20px;
 	letter-spacing: 1px;
 }
-.front-page .first-screen .left-text {
-	position: relative;
-	left: auto !important;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 48px;
-	line-height: 70px;
-	font-weight: 300;
-	padding: 0 0 93px;
-}
 .front-page .first-screen .border-bottom {
 	position: absolute;
 	bottom: 0;
@@ -33,6 +24,43 @@
 	position: relative;
 	left: auto !important;
 }
+
+.front-page .first-screen .slider {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.front-page .first-screen .slider .left-text {
+	position: absolute;
+    bottom: 100px;
+}
+.front-page .first-screen .slider ul {
+	display: block;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+.front-page .first-screen .slider ul li {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	@include cros-opacity (0);
+	@include animation-transition (1s);
+}
+.front-page .first-screen .slider ul li.active {
+	@include cros-opacity (1);
+}
+
 .front-page .about {
 	position: relative;
 }

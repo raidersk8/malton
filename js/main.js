@@ -1,3 +1,5 @@
+$('.front-page .first-screen .slider').runByElements();
+
 //Для инициализации плагинов которым важно дождаться загрузки картинок
 $(window).load(
 	function() {	
@@ -14,7 +16,7 @@ $(function() {
 		scrollBar: true,	
 		hideElement: function($elem) { $elem.show(); },
 	});	
-		$.stellar();
+	$.stellar();
 });
 function fullWindowHeight() {
 	//Делаем блоки с классом full-window-height на всю ширину
