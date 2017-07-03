@@ -42,13 +42,18 @@
 
 
 .navigate-panel {
+	font-family: 'Roboto Condensed', sans-serif;
 	position: absolute;
 	display: table;
 	top: 0;
 	right: 0;
 	width: 194px;
 	padding-right: 15px;
-	font-family: 'Roboto Condensed', sans-serif;
+	@include animation-transition (0.4s);
+	@include cros-opacity (0);
+}
+.fp-completely.active .navigate-panel {
+	@include cros-opacity (1);
 }
 .navigate-panel .phone {
 	font-size: 20px;
