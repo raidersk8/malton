@@ -7,8 +7,12 @@
 			<div class="section">
 				<?php get_template_part('blocks/front-page/about'); ?>
 			</div>
-			<div class="section">Some section</div>
-			<div class="section">Some section</div>
+			<div class="section">
+				<?php get_template_part('blocks/front-page/statistic'); ?>
+			</div>
+			<div class="section">
+				<?php get_template_part('blocks/front-page/clothing-design'); ?>
+			</div>
 		</div>		
 	</div>
 	<?php //get_template_part('blocks/front-page/list-actions'); ?>

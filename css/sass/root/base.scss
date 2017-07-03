@@ -28,7 +28,9 @@ p {
 b, strong {
     font-weight: 400;
 }
-
+sub, sup {
+    font-size: 64%;
+}
 html {
     position: relative;
     min-height: 100%;
