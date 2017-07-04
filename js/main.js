@@ -1,5 +1,7 @@
-$('.front-page .first-screen .slider').runByElements();
 
+//Перелистование на главной на первом экране
+$('.front-page .first-screen .slider').runByElements();
+$('.scroll-to').scrollToAnim();
 //Для инициализации плагинов которым важно дождаться загрузки картинок
 $(window).load(
 	function() {	

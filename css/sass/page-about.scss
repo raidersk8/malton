@@ -1,0 +1,73 @@
+.page-about {
+	position: relative;
+	z-index: 2;
+	//background: url(../img/template-about.png) center -10px no-repeat #fff;
+}
+.page-about .top-block {
+	margin-bottom: 15px;
+}
+.page-about .top-block .main-title {
+	padding-top: 13px;
+}
+.page-about .top-block .page-img {
+	margin-bottom: 35px;
+}
+.page-about .text-content {
+	margin-bottom: 45px;
+}
+.page-about .list .item .img {
+	display: table;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 15px;
+}
+.page-about .list .item {
+	margin-bottom: 55px;
+}
+.page-about .partners {
+	margin: 0 -7px;
+}
+.page-about .partners .img {
+	height: 63px;
+	display: inline-block;
+	padding: 0 7px;
+}
+.page-about .partners .img:last-child {
+	float: right;
+}
+.page-about-bg-border {
+	position: absolute;
+	width: 100%;
+	top: 480px;
+}
+.page-about-bg-border:before {
+    content: '';
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #E1CDC8;
+	z-index: 1;
+}
+.page-about-bg-border:after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #E1CDC8;
+	z-index: 1;
+}
+.page-about-bg-border .container {
+    position: relative;
+    background: #fff;
+	z-index: 2;
+}
+.page-about-bg-border .inner-border {
+	position: relative;
+	height: 300px;
+    border: 2px solid #E1CDC8;
+    border-left: none;
+	z-index: 2;
+}
+

@@ -11,6 +11,11 @@
 			<div>
 				<a href="" class="btn btn-transparent text-uppercase">Рассчитать партию</a>
 			</div>
+			<?php if(isset($navigatePanelSetting['isSupPage'])) : ?>
+			<div class="fullpage-nav">
+				<a class="moveSectionUp scroll-to" href="#top"></a>
+			</div>
+			<?php else : ?>
 			<div class="fullpage-nav">
 				<?php if(isset($navigatePanelSetting['isLast'])) : ?>
 					<span class="moveSectionDown inactive"></span>
@@ -23,6 +28,7 @@
 					<a class="moveSectionUp" href="#" onclick="$.fn.fullpage.moveSectionUp();return false"></a>			
 				<?php endif; ?>
 			</div>
+			<?php endif; ?>
 			<div class="bottom-text">© Калуга, 2017<br />Сделано в <a href="http://rbc-expert.ru/">Malton Tech</a>.</div>
 		</div>
 	</div>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: about
+Template Name: models
 Template Post Type: page
 */
 ?>

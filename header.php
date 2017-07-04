@@ -16,20 +16,24 @@
     <![endif]-->
   </head>
   <body>
+	<div id="top"></div>
   <?php 
 		//Если не главная показываем хедер для второстепенных страниц
-		if(!is_front_page()) : ?>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-1 text-right top-margin-logo">
-					<a href="/" class="logo main-logo-dark" href="#"></a>
+	if(!is_front_page()) : ?>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1 text-right top-margin-logo">
+						<a href="/" class="logo main-logo-dark" href="#"></a>
+					</div>
+					<div class="col-xs-11">			
+						<?php 
+						global $navigatePanelSetting;
+						$navigatePanelSetting = array();
+						$navigatePanelSetting['isSupPage'] = true;
+						get_template_part('blocks/base/navigate-panel'); ?>
+					</div>
 				</div>
-				<div class="col-xs-11">			
-					<?php get_template_part('blocks/base/navigate-panel'); ?>
-				</div>
-			</div>
-		</div>	
-		
-		
+			</div>	
+		</header>
 	<?php endif; ?>
