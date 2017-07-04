@@ -16,4 +16,20 @@
     <![endif]-->
   </head>
   <body>
-  <?php //wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu', 'menu_class' => '' ) ); ?>
+  <?php 
+		//Если не главная показываем хедер для второстепенных страниц
+		if(!is_front_page()) : ?>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1 text-right top-margin-logo">
+					<a href="/" class="logo main-logo-dark" href="#"></a>
+				</div>
+				<div class="col-xs-11">			
+					<?php get_template_part('blocks/base/navigate-panel'); ?>
+				</div>
+			</div>
+		</div>	
+		
+		
+	<?php endif; ?>

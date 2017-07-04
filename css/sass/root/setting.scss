@@ -63,11 +63,12 @@ $media-xs-max-width: 768px;
 	border-left: $border_width solid $color;
 	border-right: none;
 }
-@mixin animation-transition ($speed) {
-	-webkit-transition: all $speed ease-out 0s;
-     -moz-transition: all $speed ease-out 0s;
-     -o-transition: all $speed ease-out 0s;
-     transition: all $speed ease-out 0s;
+//@include animation-transition (0.5s, all);
+@mixin animation-transition ($speed, $styleName) {
+	-webkit-transition: $styleName $speed ease-out 0s;
+     -moz-transition: $styleName $speed ease-out 0s;
+     -o-transition: $styleName $speed ease-out 0s;
+     transition: $styleName $speed ease-out 0s;
 }
 @mixin cros-opacity ($val) {
 	-moz-opacity: $val; /* Mozilla 1.6 и ниже */

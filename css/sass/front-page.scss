@@ -55,7 +55,7 @@
 	left: 0;
 	bottom: 0;
 	@include cros-opacity (0);
-	@include animation-transition (1s);
+	@include animation-transition (1s, opacity);
 }
 .front-page .first-screen .slider ul li.active {
 	@include cros-opacity (1);
