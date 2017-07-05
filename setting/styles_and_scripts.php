@@ -33,6 +33,9 @@ function theme_name_scripts() {
 	//jquery
 	wp_enqueue_script( 'jquery-2', get_template_directory_uri() . '/js/jquery.min.js' );
 	
+	//ui-slider
+	wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/js/jquery-ui.min.js' );
+	
 	//wrap-jcarousel и все что нужно для этого плагина
 	wp_enqueue_script( 'jcarousel', get_template_directory_uri() . '/js/jcarousel/jquery.jcarousel.min.js' );
 	wp_enqueue_script( 'touchSwipe', get_template_directory_uri() . '/js/jcarousel/jquery.touchSwipe.min.js' );

@@ -55,8 +55,8 @@
 					<div class="row">
 						<div class="col-xs-3 col-xs-offset-1">
 							<div class="h1 main-title">Образцы продукции</div>
-							<label>Фильтр по продукции</label>
-							<select>
+							<label class="btn-block">Фильтр по продукции</label>
+							<select class="selectpicker"  data-width="100%">
 								<option>Вечерние платья</option>
 							</select>
 						</div>

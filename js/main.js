@@ -1,4 +1,9 @@
 
+//Иницализация костомных selectov
+$('.selectpicker').selectpicker({
+  style: 'btn-selectpicker'
+});
+
 //Перелистование на главной на первом экране
 $('.front-page .first-screen .slider').runByElements();
 $('.scroll-to').scrollToAnim();
@@ -13,6 +18,18 @@ $( window ).resize(function() {
 	fullWindowHeight();
 });
 $(function() {
+	//Инпут в стиле слайдера
+	$( ".input-slider" ).slider({
+		range: true,
+		value:100,
+		min: 250,
+		max: 1000,
+		step: 50,
+		slide: function( event, ui ) {
+			console.log(ui);
+		}
+	});
+	
 	//Постраничный слайдер на весь экран
 	$('#fullpage').fullpage({
 		scrollBar: true,	
