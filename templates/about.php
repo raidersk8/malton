@@ -25,63 +25,30 @@ Template Post Type: page
 					<div class="right-bottom-border-img page-img">
 						<img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-455-auto' ); ?>" />
 					</div>
-					<div class="text-content">Мы выполняем заказы по пошиву одежды (платья, юбки, брюки, сарафаны, кардиганы, блузки, рубашки, трикотажные изделия, одежда для беременных) любой сложности и гарантируем:</div>
-					<div class="list">
+					<div class="text-content"><?php the_content(); ?></div>
+					<?php if( have_rows('benefits') ): ?>
+					<div class="list">						
 						<div class="row">
+							<?php $i=0; while ( have_rows('benefits') ) : the_row(); $i++; ?>
 							<div class="col-xs-6 text-center item">
+								<?php $img = get_sub_field('img'); 
+								if($img) : ?>
 								<div class="img">
 									<div class="vertical-bottom">
-										<img src="<?php echo get_bloginfo('template_url'); ?>/img/about-list/1.png" />
+										<img src="<?php echo $img['sizes']['image-80-80']; ?>" />
 									</div>
 								</div>
-								<div class="title text-uppercase">высокое качество пошива изделий</div>
+								<?php endif; ?>
+								<div class="title text-uppercase"><?php the_sub_field('text'); ?></div>
 							</div>
-							<div class="col-xs-6 text-center item">
-								<div class="img">
-									<div class="vertical-bottom">
-										<img src="<?php echo get_bloginfo('template_url'); ?>/img/about-list/2.png" />
-									</div>
+							<?php if(!($i%2)) : ?>
 								</div>
-								<div class="title text-uppercase">доступную ценовую политику без предоплаты</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-center item">
-								<div class="img">
-									<div class="vertical-bottom">
-										<img src="<?php echo get_bloginfo('template_url'); ?>/img/about-list/3.png" />
-									</div>
-								</div>
-								<div class="title text-uppercase">отсрочку платежа сроком до 30 дней</div>
-							</div>
-							<div class="col-xs-6 text-center item">
-								<div class="img">
-									<div class="vertical-bottom">
-										<img src="<?php echo get_bloginfo('template_url'); ?>/img/about-list/4.png" />
-									</div>
-								</div>
-								<div class="title text-uppercase">помощь в подборе материалов</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-center item">
-								<div class="img">
-									<div class="vertical-bottom">
-										<img src="<?php echo get_bloginfo('template_url'); ?>/img/about-list/5.png" />
-									</div>
-								</div>
-								<div class="title text-uppercase">бесплатную фотосъемку коллекции, создание лукбуков</div>
-							</div>
-							<div class="col-xs-6 text-center item">
-								<div class="img">
-									<div class="vertical-bottom">
-										<img src="<?php echo get_bloginfo('template_url'); ?>/img/about-list/6.png" />
-									</div>
-								</div>
-								<div class="title text-uppercase">гарантии<br />возврата брака</div>
-							</div>
+								<div class="row">
+							<?php endif; ?>
+							<?php endwhile; ?>
 						</div>
 					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div class="row">
@@ -90,17 +57,7 @@ Template Post Type: page
 				</div>
 				<div class="col-xs-5">
 					<div class="text-content">
-						<p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
-						<div class="right-bottom-border-img page-img">
-							<iframe src="https://player.vimeo.com/video/77593411" width="336" height="336" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						</div>
-						<p>Таким образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки соответствующий условий активизации. Товарищи! реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия.</p>
-						<div class="right-bottom-border-img page-img">
-							<iframe src="https://player.vimeo.com/video/77593411" width="336" height="336" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						</div>
-						<div class="right-bottom-border-img page-img">
-							<iframe src="https://player.vimeo.com/video/77593411" width="336" height="336" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						</div>
+						<?php the_field('video-content'); ?>
 					</div>
 				</div>
 			</div>
@@ -110,45 +67,22 @@ Template Post Type: page
 				</div>
 				<div class="col-xs-5">
 					<div class="text-content">
-						Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+						<?php the_field('partners-content'); ?>
 					</div>
+					<?php $partners =get_field('partners'); 
+					if($partners) : ?>
 					<div class="partners">
+						<?php foreach($partners as $row) : ?>
 						<div class="img">
 							<div class="wrap-vertical-position">
 								<div class="vertical-middle">
-									<img src="<?php echo get_bloginfo('template_url'); ?>/img/partners/1.png" />
+									<img src="<?php echo $row['sizes']['image-auto-63']; ?>" />
 								</div>
 							</div>
 						</div>
-						<div class="img">
-							<div class="wrap-vertical-position">
-								<div class="vertical-middle">
-									<img src="<?php echo get_bloginfo('template_url'); ?>/img/partners/2.png" />
-								</div>
-							</div>
-						</div>
-						<div class="img">
-							<div class="wrap-vertical-position">
-								<div class="vertical-middle">
-									<img src="<?php echo get_bloginfo('template_url'); ?>/img/partners/3.png" />
-								</div>
-							</div>
-						</div>
-						<div class="img">
-							<div class="wrap-vertical-position">
-								<div class="vertical-middle">
-									<img src="<?php echo get_bloginfo('template_url'); ?>/img/partners/4.png" />
-								</div>
-							</div>
-						</div>
-						<div class="img">
-							<div class="wrap-vertical-position">
-								<div class="vertical-middle">
-									<img src="<?php echo get_bloginfo('template_url'); ?>/img/partners/5.png" />
-								</div>
-							</div>
-						</div>
-					</div>					
+						<?php endforeach; ?>
+					</div>		
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

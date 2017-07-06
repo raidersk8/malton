@@ -17,27 +17,33 @@
 			</div>
 		</div>
 	</div>		
-		
+	<?php if( have_rows('first-screen-slider', 26) ): ?>
 	<div class="slider">
-		<ul>
-			<li data-stellar-ratio="0.5">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="row">
-								<div class="col-xs-3 col-xs-offset-1 position-static">	
-									<div class="left-text">
-										<div class="h1">высокое<br />качество<br />пошива<br />изделий</div>
+		<ul>			
+			<?php while ( have_rows('first-screen-slider', 26) ) : the_row(); ?>			
+				<?php $img = get_sub_field('img'); 
+				if($img) : ?>
+				<li data-stellar-ratio="0.5">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-xs-3 col-xs-offset-1 position-static">	
+										<div class="left-text">
+											<div class="h1"><?php the_sub_field('text'); ?></div>
+										</div>
 									</div>
-								</div>
-								<div class="col-xs-6 col-xs-pull-1 text-center">	
-									<img class="center-img" src="<?php echo get_bloginfo('template_url'); ?>/img/front-page-first-screen-center-img.png" alt="" />
+									<div class="col-xs-6 col-xs-pull-1 text-center">	
+										<img class="center-img" src="<?php echo $img['sizes']['image-auto-800']; ?>" alt="" />
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</li>
+				</li>
+				<?php endif; ?>
+			<?php endwhile; ?>
 		</ul>
 	</div>
+	<?php endif; ?>
 </div>

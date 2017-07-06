@@ -1,6 +1,6 @@
 <?php global $navigatePanelSetting; ?>
 <div class="navigate-panel full-window-height">
-	<div class="phone text-right table-row"><div class="vertical-bottom">+7 (910) 597-48-08</div></div>
+	<div class="phone text-right table-row"><div class="vertical-bottom"><?php the_field('phone', 'option'); ?></div></div>
 	<div class="table-row" style="height: 83%;">
 		<div class="vertical-middle left-margin">
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu', 'menu_class' => '' ) ); ?>
@@ -29,7 +29,7 @@
 				<?php endif; ?>
 			</div>
 			<?php endif; ?>
-			<div class="bottom-text">© Калуга, 2017<br />Сделано в <a href="http://rbc-expert.ru/">Malton Tech</a>.</div>
+			<div class="bottom-text">© Калуга, <?php echo date('Y'); ?><br />Сделано в <a href="http://rbc-expert.ru/">Malton Tech</a>.</div>
 		</div>
 	</div>
 </div>

@@ -1,4 +1,5 @@
 <?php get_header(); ?>	
+<?php if( have_posts() ) : the_post(); ?>	
 	<div class="front-page">
 		<div id="fullpage">
 			<div class="section">
@@ -16,4 +17,5 @@
 		</div>		
 	</div>
 	<?php //get_template_part('blocks/front-page/list-actions'); ?>
+<?php endif; ?>
 <?php get_footer(); ?>

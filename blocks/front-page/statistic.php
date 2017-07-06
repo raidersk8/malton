@@ -17,34 +17,22 @@
 			<div class="col-xs-8 full-window-height">
 				<div class="wrap-vertical-position">
 					<div class="vertical-middle">
+						<?php if( have_rows('statistic', 26) ): ?>
 						<div class="row items">
+						<?php $i=0; while ( have_rows('statistic', 26) ) : the_row(); $i++; ?>	
 							<div class="col-xs-6">
 								<div class="item">
-									<div class="title"><div class="inner">1000 м<sup>2</sup></div></div>
-									<div class="text">площадь собственного производства, включая 5 линий, оснащённых современным оборудованием с высокой точностью обработки деталей</div>
+									<div class="title"><div class="inner"><?php the_sub_field('title'); ?></div></div>
+									<div class="text"><?php the_sub_field('text'); ?></div>
 								</div>
 							</div>
-							<div class="col-xs-6">
-								<div class="item">
-									<div class="title"><div class="inner">90 человек</div></div>
-									<div class="text">специалистов (дизайнеров, закройщиков, швей), работающих в 3 смены и являющихся нашей гордостью и достоянием</div>
-								</div>
-							</div>
-						</div>	
+						<?php if(!($i%2)) : ?>
+						</div>
 						<div class="row items">
-							<div class="col-xs-6">
-								<div class="item">
-									<div class="title"><div class="inner">более 80</div></div>
-									<div class="text">разработанных коллекций, пользующихся огромным спросом на популярных площадках по продаже одежды</div>
-								</div>
-							</div>
-							<div class="col-xs-6">
-								<div class="item">
-									<div class="title"><div class="inner">3 дня</div></div>
-									<div class="text">минимальный срок доставки продкции собственной службой в пределах ЦФО</div>
-								</div>
-							</div>
-						</div>	
+						<?php endif; ?>
+						<?php endwhile; ?>
+						</div>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
