@@ -1,6 +1,9 @@
 .single-services {
-	background: url(../img/template-services.png) center -13px no-repeat #fff;
-	height: 3000px;
+	//background: url(../img/template-services.png) center -13px no-repeat #fff;
+	//height: 3000px;
+}
+.single-services .left-part {
+	position: fixed;
 }
 .single-services .content {
 	position: relative;

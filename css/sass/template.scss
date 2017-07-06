@@ -52,6 +52,10 @@
 	@include animation-transition (0.4s, all);
 	z-index: 10;
 }
+.navigate-panel .btn {
+	font-size: 14px;
+    padding: 9px 10px;
+}
 #fullpage .navigate-panel {
 	@include cros-opacity (0);
 }
@@ -168,16 +172,46 @@
 	position: relative;
 	width: 100%;
 }
+.right-bottom-border-img iframe {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 260px;
+}
 
 .page {
 	padding-top: 140px;
 }
 .wrap-input-slider {
+	position: relative;
 	padding-top: 6px;
+}
+.wrap-input-slider .present-value {
+	position: absolute;
+	display: none;
+	top: 6px;
+	left: 0px;
+	background: #fff;
+}
+.wrap-input-slider input {
+	display: none;
+}
+.wrap-input-slider.is-right-value .present-value {
+	font-weight: 500;
 }
 .wrap-input-slider label {
 	margin-bottom: 8px;
-	color: #4D4249;
+	color: $main-color;
+}
+.wrap-input-slider label.max-right {
+	display: block;
+	float: right;
+}
+.wrap-input-slider label.max-right span {
+	@include cros-opacity (0);
+}
+.wrap-input-slider.is-right-value label.max-right span {
+	@include cros-opacity(1);
 }
 .wrap-input-slider .input-slider span:first-of-type {
 	display: none;

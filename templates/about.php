@@ -86,6 +86,26 @@ Template Post Type: page
 			</div>
 			<div class="row">
 				<div class="col-xs-3 col-xs-offset-1">
+					<div class="h1 main-title">Видео-экскурсия</div>
+				</div>
+				<div class="col-xs-5">
+					<div class="text-content">
+						<p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
+						<div class="right-bottom-border-img page-img">
+							<iframe src="https://player.vimeo.com/video/77593411" width="336" height="336" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>
+						<p>Таким образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки соответствующий условий активизации. Товарищи! реализация намеченных плановых заданий способствует подготовки и реализации систем массового участия.</p>
+						<div class="right-bottom-border-img page-img">
+							<iframe src="https://player.vimeo.com/video/77593411" width="336" height="336" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>
+						<div class="right-bottom-border-img page-img">
+							<iframe src="https://player.vimeo.com/video/77593411" width="336" height="336" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-xs-offset-1">
 					<div class="h1 main-title">Наши партнёры</div>
 				</div>
 				<div class="col-xs-5">
@@ -128,8 +148,7 @@ Template Post Type: page
 								</div>
 							</div>
 						</div>
-					</div>
-					
+					</div>					
 				</div>
 			</div>
 		</div>
