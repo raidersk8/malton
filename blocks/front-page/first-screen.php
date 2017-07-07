@@ -1,4 +1,4 @@
-<div class="first-screen full-height light-text" data-stellar-offset-parent="true">
+<div class="first-screen full-height light-text dark-bg" data-stellar-offset-parent="true">
 	<div class="border-bottom" data-stellar-ratio="0.1"></div>
 	<div class="container">
 		<div class="row">

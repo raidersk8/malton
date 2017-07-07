@@ -16,6 +16,8 @@
     <![endif]-->
   </head>
   <body>
+	
+	<div id="preloader"></div>
 	<div id="top"></div>
   <?php 
 		//Если не главная показываем хедер для второстепенных страниц

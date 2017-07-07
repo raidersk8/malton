@@ -72,8 +72,41 @@ $act_term = get_queried_object();
 <?php
 function viewExample($properte, $style = '') { ?>
 	<?php echo $properte['open']; ?>
-		<a href="#" class="item <?php echo $properte['class-item']; ?>" style="<?php echo $style; ?> background-image: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), $properte['size'] ); ?>);">
+		<a href="#example-<?php echo get_the_ID(); ?>" class="item <?php echo $properte['class-item']; ?> fancybox-full-screen" style="<?php echo $style; ?> background-image: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), $properte['size'] ); ?>);">
 		</a>
+		<div style="display: none">
+			<div id="example-<?php echo get_the_ID(); ?>" class="fancybox-form fancybox-full-screen-window">
+				<div class="wrap-vertical-position">
+					<div class="vertical-middle">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-4 col-xs-offset-1">
+									<div class="row"><div class="col-xs-9"><div class="h1"><?php the_title(); ?></div></div></div>
+									<div><?php the_content(); ?></div>
+									<a href="#fancybox-calculate-the-lot" class="btn btn-transparent text-uppercase fancybox-full-screen">Рассчитать партию</a>
+								</div>
+								<div class="col-xs-4 col-xs-offset-1 example-gallery">
+									<?php $gallery = get_field('gallery'); 
+									if($gallery): ?>
+									<div class="wrap-jcarousel" data-responsivecountitem="1" data-wrap="circular">
+										<div class="jcarousel">
+											<ul>
+												<?php foreach($gallery as $row) : ?>
+												<li style="background-image: url(<?php echo $row['sizes']['image-358-500']; ?>)"></li>
+												<?php endforeach; ?>
+											</ul>
+										</div>
+										<a href="#" class="jcarousel-prev"></a>
+										<a href="#" class="jcarousel-next"></a>
+									</div>
+									<?php endif; ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	<?php echo $properte['close']; ?>	
 <?}?>
 <?php get_footer(); ?>

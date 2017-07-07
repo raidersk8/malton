@@ -117,7 +117,9 @@ label {
 }
 .light-text .btn-transparent:hover {
   color: #E1CDC8;	
-
+}
+.dark-bg .btn-transparent:hover {
+  color: $main-color;	
 }
 .btn-transparent:active,
 .btn-transparent.active,

@@ -1,5 +1,5 @@
 <?php $img = get_field('bg-design', 26);?>
-<div class="clothing-design light-text full-height" style="background-image: url(<?php if($img) echo $img['url']; ?>)">
+<div class="clothing-design light-text full-height dark-bg" style="background-image: url(<?php if($img) echo $img['url']; ?>)">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-1 text-right top-margin-logo">

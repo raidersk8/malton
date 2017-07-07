@@ -20,7 +20,10 @@ $(".fancybox-full-screen").fancybox({
 	height: "100%",
 	autoSize: false,
 	margin: [0,0 ,0, 0],
-	padding: [0, 0, 0, 0]
+	padding: [0, 0, 0, 0],
+	afterShow: function() {
+		$('.fancybox-skin .jcarousel').jcarousel('reload');		
+	}
 });
 $(".fancybox").fancybox({
 	margin: [0,0 ,0, 0],
@@ -29,8 +32,9 @@ $(".fancybox").fancybox({
 //Для инициализации плагинов которым важно дождаться загрузки картинок
 $(window).load(
 	function() {	
+		$('#preloader').hide();
 		fullWindowHeight();
-		//$('.wrap-jcarousel').wrapJcarousel();		
+		$('.example-gallery .wrap-jcarousel').wrapJcarousel();		
 	}
 );
 $( window ).resize(function() {

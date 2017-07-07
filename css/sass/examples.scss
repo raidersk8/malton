@@ -84,3 +84,35 @@
 .archive-examples .list .col-item .item.type-4:hover:before {
 	height: 510px;
 }
+
+.example-gallery .wrap-jcarousel {
+	position: relative;
+}
+.example-gallery .wrap-jcarousel .jcarousel li {
+	height: 500px;
+	background-size: cover;
+}
+.example-gallery .wrap-jcarousel .jcarousel-prev {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: -30px;
+	@include left-arrow (2px, 22px, 22px, #907E8A);
+	margin-top: -22px;
+	@include animation-transition (0.3s, opacity);
+}
+.example-gallery .wrap-jcarousel .jcarousel-prev:hover {
+	@include cros-opacity(0.5);
+}
+.example-gallery .wrap-jcarousel .jcarousel-next {
+	position: absolute;
+	display: block;
+	top: 50%;
+	right: -30px;
+	@include right-arrow (2px, 22px, 22px, #907E8A);
+	margin-top: -22px;
+	@include animation-transition (0.3s, opacity);
+}
+.example-gallery .wrap-jcarousel .jcarousel-next:hover {
+	@include cros-opacity(0.5);
+}

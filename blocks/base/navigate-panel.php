@@ -9,7 +9,7 @@
 	<div class="table-row">
 		<div class="vertical-bottom left-margin">
 			<div>
-				<a href="#fancybox-calculate-the-lot" class="btn btn-transparent text-uppercase fancybox-full-screen">Рассчитать партию</a>
+				<a href="#fancybox-calculate-the-lot" onclick="$('.nav-list-tabs li a').eq(0).click();" class="btn btn-transparent text-uppercase fancybox-full-screen">Рассчитать партию</a>
 			</div>
 			<?php if(isset($navigatePanelSetting['isSupPage'])) : ?>
 			<div class="fullpage-nav">

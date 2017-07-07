@@ -20,6 +20,7 @@ add_image_size('image-179-314', 179, 314, array('center', 'top'));
 add_image_size('image-179-250', 179, 250, array('center', 'top'));
 add_image_size('image-273-250', 273, 250, array('center', 'top'));
 add_image_size('image-368-510', 368, 510, array('center', 'top'));
+add_image_size('image-358-500', 358, 500, array('center', 'top'));
 
 
 
