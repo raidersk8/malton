@@ -22,6 +22,14 @@ a:hover {
 	color: $a-color;
 	border-color: transparent;
 }
+a:focus {
+    outline: 0;
+    outline-offset: 0px;
+}
+a:hover, a:focus {
+	color: $a-color;
+	text-decoration: none;
+}
 p {
 	margin: 0 0 20px;
 }

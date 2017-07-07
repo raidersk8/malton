@@ -1,5 +1,5 @@
-.fancybox-skin div.wpcf7-response-output {
-	//display: none !important;
+.fancybox-skin { 
+	background: #E5E5E5;
 }
 .fancybox-nav {
 	width: 36px;
@@ -27,5 +27,6 @@
     right: 10px;
     width: 22px;
     height: 22px;
-	background: url(../img/close.png) center center no-repeat;
+	background: url(../svg/close.svg) center center no-repeat;
+	border: none;
 }

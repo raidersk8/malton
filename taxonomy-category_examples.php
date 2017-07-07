@@ -1,4 +1,6 @@
-<?php get_header(); ?>	
+<?php get_header(); 
+$act_term = get_queried_object();
+?>	
 	<div class="page">
 		<div class="archive-examples">
 			<div class="container">
@@ -55,9 +57,9 @@
 							<?php $categories = get_terms('category_examples'); 
 							if($categories) : ?>
 							<label class="btn-block">Фильтр по продукции</label>
-							<select class="selectpicker"  data-width="100%">
+							<select class="selectpicker-ref"  data-width="100%">
 								<?php foreach($categories as $row) : ?>
-								<option><?php echo $row->name; ?></option>
+								<option <?php if($act_term->term_id == $row->term_id) echo 'selected'; ?> value="<?php echo get_term_link( $row ); ?>"><?php echo $row->name; ?></option>
 								<?php endforeach; ?>
 							</select>
 							<?php endif; ?>

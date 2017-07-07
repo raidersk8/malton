@@ -26,13 +26,13 @@
 								</div>
 								<div class="col-xs-7">
 									<ul class="list">
-										<li>— Качественный материалы;</li>
-										<li>— Точность размеров;</li>
-										<li>— Модный фасон;</li>
-										<li>— Высокое качество пошива;</li>
-										<li>— Сам бы носил, но не поймут!</li>
+										<?php if( have_rows('list') ): ?>
+											<?php while ( have_rows('list') ) : the_row(); ?>		
+												<li>— <?php the_sub_field('text'); ?></li>
+											<?php endwhile; ?>
+										<?php endif; ?>
 									</ul>
-									<div class="price">от 220 &#8381;/шт</div>
+									<div class="price">от <?php the_field('price'); ?> &#8381;/шт</div>
 								</div>
 							</div>
 							<?php the_content(); ?>
@@ -40,31 +40,7 @@
 					</div>
 					<div class="bottom-form">
 						<div class="h2">Рассчитать партию</div>
-						<label class="btn-block">Размер партии (шт.)</label>
-						<div class="form-group">
-							<div class="wrap-input-slider">
-								<input value="" />
-								<div class="row">
-									<div class="col-xs-6"><label class="btn-block">250</label></div>
-									<div class="col-xs-6 text-right"><label class="max-right"><span>&nbsp;-&nbsp;</span>более 1000</label></div>
-								</div>
-								<label class="present-value">300</label>
-								<div class="input-slider" data-min="250" data-max="1000" data-step="50"></div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="btn-block">Введите ваш Email</label>
-							<input class="form-control" value="" />
-						</div>
-						<div class="form-group">
-							<label class="btn-block">Введите ваш телефон</label>
-							<input class="form-control" value="" />
-						</div>
-						<div class="row">
-							<div class="col-xs-7">
-								<a href="" class="btn btn-transparent text-uppercase btn-block">Отправить запрос</a>
-							</div>
-						</div>
+						<?php echo do_shortcode('[contact-form-7 id="110" title="Заявка на расчёт партии с страницы услуги" service="'.get_the_title().'"]') ?>
 					</div>
 				</div>
 			</div>
