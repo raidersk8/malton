@@ -1,0 +1,51 @@
+@media (max-width: $media-lg-min-width) {
+	.front-page .first-screen .logo-text {
+		font-size: 16px;
+		line-height: 24px;
+		padding-top: 7px;
+		display: inline-block;
+	}
+	.front-page .statistic .items .item .title {
+		font-size: 36px;
+		line-height: 50px;
+	}
+	.front-page .statistic .items .item .title:before {
+		width: 75px;
+	}
+}
+@media (max-width: $media-md-min-width) {
+	.front-page .first-screen .border-bottom .inner {
+		height: 420px;
+	}
+	.front-page .first-screen .center-img {
+		min-height: 460px;
+	}
+}
+@media (max-width: $media-sm-min-width) {
+	.front-page .first-screen .border-bottom .inner {
+		height: 222px;
+	}
+	.front-page .first-screen .center-img {
+		min-height: auto;
+	}
+	.front-page .about {
+		padding-top: 95px;
+	}
+	.front-page .about .top-margin {
+		padding-top: 0;
+	}
+	.front-page .statistic {
+		padding: 50px 0;
+	}
+	.front-page .clothing-design {
+		padding: 60px 0;
+	}
+}
+@media (min-height: 900px) and (min-width: $media-lg-min-width - 1px) {
+	.front-page .first-screen .center-img {
+		height: 800px;
+		width: auto;
+		max-width: none;
+		min-height: auto;
+	}
+}

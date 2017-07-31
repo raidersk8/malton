@@ -1,5 +1,5 @@
 <div class="statistic full-height">
-	<div class="left-top-border">
+	<div class="left-top-border hidden-xs">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2 no-pl">
@@ -11,16 +11,16 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-1 text-right top-margin-logo">
+			<div class="col-xs-1 text-right text-left-md top-margin-logo hidden-xs">
 				<a href="/" class="logo main-logo-dark" href="#"></a>
 			</div>
-			<div class="col-xs-8 full-window-height">
+			<div class="col-sm-9 col-sm-offset-1 col-xs-12 <?php if(!wpmd_is_phone()) : ?>full-window-height<?php endif; ?>">
 				<div class="wrap-vertical-position">
 					<div class="vertical-middle">
 						<?php if( have_rows('statistic', 26) ): ?>
 						<div class="row items">
 						<?php $i=0; while ( have_rows('statistic', 26) ) : the_row(); $i++; ?>	
-							<div class="col-xs-6">
+							<div class="col-sm-6 col-xs-10">
 								<div class="item">
 									<div class="title"><div class="inner"><?php the_sub_field('title'); ?></div></div>
 									<div class="text"><?php the_sub_field('text'); ?></div>

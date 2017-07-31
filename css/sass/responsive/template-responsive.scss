@@ -1,0 +1,25 @@
+@media (max-width: $media-md-max-width) {
+	.menu ul {
+		font-size: 14px;
+	}
+	.navigate-panel {
+		width: 162px;
+		padding-right: 0;
+	}
+	.navigate-panel .phone {
+		font-size: 16px;
+		text-align: center;
+	}
+	.navigate-panel .btn {
+		font-size: 11px;
+		padding: 12px 0 11px;
+	}
+}
+@media (max-width: $media-xs-max-width) {
+	header {
+		background: #fff;
+	}
+	.page-about .partners .img:last-child {
+		float: none;
+	}
+}

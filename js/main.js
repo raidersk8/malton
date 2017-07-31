@@ -14,6 +14,14 @@ $('.selectpicker-ref').on('changed.bs.select', function (e) {
 //Перелистование на главной на первом экране
 $('.front-page .first-screen .slider').runByElements();
 $('.scroll-to').scrollToAnim();
+$(window).scroll(function(){                             
+   if ( $(window).scrollTop() > 0 ){                  
+      $('.moveSectionUp.scroll-to').addClass('active');       
+   }
+   else {
+      $('.moveSectionUp.scroll-to').removeClass('active'); 
+   }
+});
 
 $(".fancybox-full-screen").fancybox({
 	width: "100%", 
@@ -90,28 +98,39 @@ $(function() {
 	initInputSlider($( ".wrap-input-slider .input-slider" ));
 	///////////////////////////////////////////////////////////// инпут в стиле слайдера
 	
-	//Постраничный слайдер на весь экран
-	$('#fullpage').fullpage({
-		scrollBar: true,	
-		hideElement: function($elem) { $elem.show(); },
-	});	
-	//Паралакс
-	$.stellar();
+	if(!$('.is-phone').length) {
+		//Постраничный слайдер на весь экран
+		$('#fullpage').fullpage({
+			scrollBar: true,	
+			hideElement: function($elem) { $elem.show(); },
+		});	
+		//Паралакс
+		$.stellar();
+		
+	}
 });
 function fullWindowHeight() {
 	//Делаем блоки с классом full-window-height на всю ширину
-	if(!$('body').hasClass('is-tablet')) {
-		if($('.full-window-height').length) {
-			var fullScreenHeight = $(window).innerHeight();
-			if(!$('body').hasClass('is-front-page')) {
-				fullScreenHeight -= $('.header').height();
-			}
-			$('.full-window-height').innerHeight(fullScreenHeight);
+	if($('.full-window-height').length) {
+		var fullScreenHeight = $(window).innerHeight();
+		if(!$('body').hasClass('is-front-page')) {
+			fullScreenHeight -= $('.header').height();
 		}
+		$('.full-window-height').innerHeight(fullScreenHeight);
 	}
 }
 
-
+//Показываем мобальное меню
+$('.switch-mobile-menu').on('click', function() {
+	var $this = $(this);
+	if($this.hasClass('active')) {
+		$this.removeClass('active');
+		$($this.attr('href')).hide('slide', {direction: "right"});
+	} else {
+		$this.addClass('active');
+		$($this.attr('href')).show('slide', {direction: "right"});
+	}
+});
 
 //Программируем заказ
 //Добавляем первую строку

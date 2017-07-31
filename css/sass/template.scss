@@ -47,14 +47,14 @@
 	display: table;
 	top: 0;
 	right: 0;
-	width: 194px;
-	padding-right: 15px;
+	width: 220px;
+	padding-right: 40px;
 	@include animation-transition (0.4s, all);
 	z-index: 10;
 }
 .navigate-panel .btn {
 	font-size: 14px;
-    padding: 9px 10px;
+    padding: 9px 0;
 }
 #fullpage .navigate-panel {
 	@include cros-opacity (0);
@@ -129,6 +129,13 @@
 	@include top-arrow (2px, 22px, 22px, #C4C4C4);
 }
 
+.navigate-panel .fullpage-nav .moveSectionUp.scroll-to {
+	@include cros-opacity(0);
+}
+.navigate-panel .fullpage-nav .moveSectionUp.scroll-to.active {
+	@include cros-opacity(1);
+}
+
 .navigate-panel .fullpage-nav .moveSectionUp {
 	@include top-arrow (2px, 22px, 22px, #907E8A);
 }
@@ -171,6 +178,7 @@
 .right-bottom-border-img img {
 	position: relative;
 	width: 100%;
+	height: auto;
 }
 .right-bottom-border-img iframe {
 	display: block;
@@ -349,6 +357,67 @@ div.wpcf7-response-output {
 .fancybox-message {
 	padding: 40px;
 }
+.navigate-panel-mobile {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 54px;
+	height: 100%;
+	background: rgba(77, 66, 73, 0.75);
+	z-index: 11;
+	text-align: center;
+	padding: 43px 0 0;
+}
+
+.navigate-panel-mobile .switch-mobile-menu {
+	position: relative;
+	border: none;
+	@include menu-icon (#E1CDC8);
+	z-index: 11;
+}
+.navigate-panel-mobile .switch-mobile-menu.active {
+	@include close-menu-icon ();
+}
+
+.navigate-panel-mobile .to-up-arrow {
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	border: none;
+	padding-bottom: 58px;
+	@include cros-opacity(0);
+}
+.navigate-panel-mobile .to-up-arrow.active {
+	@include cros-opacity(1);
+}
+.navigate-panel-mobile .to-up-arrow:before {
+	content: '';
+	display: inline-block;
+	@include top-arrow(2px, 15px, 15px, #E1CDC8);
+}
+.navigate-panel-mobile-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 10;
+	background: #4D4249;
+	padding: 115px 0 0;
+}
+.navigate-panel-mobile-menu a {
+	color: $main-color-2;
+	border-color: #907E8A;
+}
+
+
+
 #preloader {
 	display: block;
 	position: fixed;
@@ -359,3 +428,4 @@ div.wpcf7-response-output {
 	width: 100%;
     height: 100%;
 }
+

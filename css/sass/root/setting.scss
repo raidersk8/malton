@@ -9,8 +9,13 @@ $main-color: #4D4249;
 $main-color-2: #E1CDC8;
 $main-bg: #fff;
 
-$media-md-max-width: 1299px;
+$media-lg-min-width: 1200px;
+$media-md-min-width: 992px;
+$media-sm-min-width: 768px;
+
+$media-md-max-width: 1200px;
 $media-xs-max-width: 768px;
+
 
 
 @mixin right-arrow ($border_width, $pxwidth, $pxheight, $color) {
@@ -87,7 +92,7 @@ $media-xs-max-width: 768px;
 		display: inline-block;
 		height: 14px;
 		width: 16px;
-		margin: 0 13px 0 0;
+		margin: 0;
 	}
 	.icon:before {
 		content: '';
@@ -97,7 +102,7 @@ $media-xs-max-width: 768px;
 		top: 0;
 		left: 0;
 		background: $color;
-		@include animation-transition (0.3s);
+		@include animation-transition (0.3s, all);
 	}
 	.icon:after {
 		content: '';
@@ -107,7 +112,7 @@ $media-xs-max-width: 768px;
 		bottom: 0;
 		left: 0;
 		background: $color;
-		@include animation-transition (0.3s);
+		@include animation-transition (0.3s, all);
 	}
 	.icon .middle-line {
 		position: absolute;
@@ -136,5 +141,24 @@ $media-xs-max-width: 768px;
 	}
 	.icon .middle-line {
 		@include cros-opacity (0);
+	}
+}
+@mixin open-menu-icon () {	
+	.icon:before {
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		top: 0px;
+	}
+	.icon:after {
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		bottom: 0px;
+	}
+	.icon .middle-line {
+		@include cros-opacity (1);
 	}
 }

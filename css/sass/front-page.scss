@@ -1,3 +1,7 @@
+
+.front-page .section {
+	position: relative;
+}
 .front-page .first-screen {  
 	position: relative;
 	background: url(../img/front-page-first-screen-bg.png) left top no-repeat;
@@ -13,19 +17,24 @@
 .front-page .first-screen .border-bottom {
 	position: absolute;
 	bottom: 0;
-	left: 50% !important;
-    width: 422px;
-	height: 520px;
+	left: 0;
+	width: 100%;
+   //width: 422px;
+}
+.front-page .first-screen .border-bottom .inner {
 	border: 2px solid #E1CDC8;
+	height: 520px;
 	border-bottom: 0;
-    margin-left: -211px;
+	margin: 0 -30px;
 }
 .front-page .first-screen .center-img {
 	position: relative;
 	left: auto !important;
+	max-width: 100%;
 }
 
 .front-page .first-screen .slider {
+	display: block !important;
 	position: absolute;
 	width: 100%;
 	bottom: 0;
@@ -70,13 +79,15 @@
 .front-page .about .border-top {
 	position: absolute;
     top: 0;
-    left: 50% !important;
-    width: 422px;
+    left: 0 !important;
+    width: 100%;
+}
+
+.front-page .about .border-top .inner {
+	border: 2px solid #E1CDC8;
     height: 62px;
-    border: 2px solid #E1CDC8;
     border-top: 0;
-    margin-left: -211px;
-	
+	margin: 0 -30px;
 }
 .front-page .about .left-bottom-border {
 	position: absolute;
@@ -126,7 +137,7 @@
 	background: #F0F0F0;
 }
 .front-page .statistic .left-top-border .inner-border {
-	height: 100px;
+	height: 101px;
 	border: 2px solid #E1CDC8;
 	border-left: none;
 	border-top: none;
@@ -161,4 +172,5 @@
 }
 .front-page .clothing-design {
 	background: url(../img/clothing-design-bg.png) center bottom no-repeat #0A0A0A;
+	background-size: auto 100%;
 }

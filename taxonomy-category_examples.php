@@ -6,17 +6,17 @@ $act_term = get_queried_object();
 			<div class="container">
 				<div class="row">					
 					<?php if( have_posts() ) : ?>
-					<div class="col-xs-8 col-xs-offset-1 list">
+					<div class="col-sm-8 col-sm-offset-1 col-xs-10 list">
 						<div class="row">
 							<?php $isfirstgroup = true; $g=0; $i=0; while ( have_posts() ) : the_post(); $i++; ?>
 							<?php if($isfirstgroup == true) : 
 								$properties = array(
-									1 => array('open' => '<div class="col-item col-xs-4-5">', 'close'=>'</div>', 'class-item' => 'type-1', 'size'=>'image-273-640'),
-									2 => array('open' => '<div class="col-item col-xs-4-5">', 'close'=>'</div>', 'class-item' => 'type-1', 'size'=>'image-273-640'),
-									3 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'', 'class-item' => 'type-2', 'size'=>'image-179-314'),
+									1 => array('open' => '<div class="col-item col-sm-4-5 col-xs-12">', 'close'=>'</div>', 'class-item' => 'type-1', 'size'=>'image-273-640'),
+									2 => array('open' => '<div class="col-item col-sm-4-5 col-xs-12">', 'close'=>'</div>', 'class-item' => 'type-1', 'size'=>'image-273-640'),
+									3 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'', 'class-item' => 'type-2', 'size'=>'image-179-314'),
 									4 => array('open' => '', 'close'=>'</div>', 'class-item' => 'type-2', 'size'=>'image-179-314'),									
-									5 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
-									6 => array('open' => '<div class="col-item col-xs-4-5">', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-273-250'),
+									5 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
+									6 => array('open' => '<div class="col-item col-sm-4-5 col-xs-12">', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-273-250'),
 								);
 								viewExample($properties[$i], ($i==1) ? 'margin-top: 260px;' : '');
 							?>					
@@ -30,25 +30,25 @@ $act_term = get_queried_object();
 								<?php 
 									$properties = array(
 										array(
-										1 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
+										1 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										2 => array('open' => '', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
-										3 => array('open' => '<div class="col-item col-xs-6">', 'close'=>'</div>', 'class-item' => 'type-4', 'size'=>'image-368-510'),
-										4 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
+										3 => array('open' => '<div class="col-item col-sm-6 col-xs-12">', 'close'=>'</div>', 'class-item' => 'type-4', 'size'=>'image-368-510'),
+										4 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										5 => array('open' => '', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										),
 										array(
-										1 => array('open' => '<div class="col-item col-xs-6">', 'close'=>'</div>', 'class-item' => 'type-4', 'size'=>'image-368-510'),
-										2 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
+										1 => array('open' => '<div class="col-item col-sm-6 col-xs-12">', 'close'=>'</div>', 'class-item' => 'type-4', 'size'=>'image-368-510'),
+										2 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										3 => array('open' => '', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
-										4 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
+										4 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										5 => array('open' => '', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										),
 										array(
-										1 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
+										1 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										2 => array('open' => '', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
-										3 => array('open' => '<div class="col-item col-xs-3">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
+										3 => array('open' => '<div class="col-item col-sm-3 col-xs-12">', 'close'=>'', 'class-item' => 'type-3', 'size'=>'image-179-250'),
 										4 => array('open' => '', 'close'=>'</div>', 'class-item' => 'type-3', 'size'=>'image-179-250'),
-										5 => array('open' => '<div class="col-item col-xs-6">', 'close'=>'</div>', 'class-item' => 'type-4', 'size'=>'image-368-510'),
+										5 => array('open' => '<div class="col-item col-sm-6 col-xs-12">', 'close'=>'</div>', 'class-item' => 'type-4', 'size'=>'image-368-510'),
 										),
 									);
 									viewExample($properties[$g][$i], '');
@@ -68,7 +68,7 @@ $act_term = get_queried_object();
 			<div class="top-part">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-3 col-xs-offset-1">
+						<div class="col-sm-3 col-sm-offset-1 col-xs-10">
 							<div class="h1 main-title">Образцы продукции</div>
 							<?php $categories = get_terms('category_examples'); 
 							if($categories) : ?>
@@ -96,12 +96,12 @@ function viewExample($properte, $style = '') { ?>
 					<div class="vertical-middle">
 						<div class="container">
 							<div class="row">
-								<div class="col-xs-4 col-xs-offset-1">
+								<div class="col-sm-4 col-sm-offset-1 col-xs-12">
 									<div class="row"><div class="col-xs-9"><div class="h1"><?php the_title(); ?></div></div></div>
 									<div><?php the_content(); ?></div>
 									<a href="#fancybox-calculate-the-lot" class="btn btn-transparent text-uppercase fancybox-full-screen">Рассчитать партию</a>
 								</div>
-								<div class="col-xs-4 col-xs-offset-1 example-gallery">
+								<div class="col-xs-4 col-xs-offset-1 example-gallery hidden-xs">
 									<?php $gallery = get_field('gallery'); 
 									if($gallery): ?>
 									<div class="wrap-jcarousel" data-responsivecountitem="1" data-wrap="circular">

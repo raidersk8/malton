@@ -1,5 +1,5 @@
 <?php global $navigatePanelSetting; ?>
-<div class="navigate-panel full-window-height">
+<div class="navigate-panel full-window-height hidden-sm hidden-xs">
 	<div class="phone text-right table-row"><div class="vertical-bottom"><?php the_field('phone', 'option'); ?></div></div>
 	<div class="table-row" style="height: 83%;">
 		<div class="vertical-middle left-margin">
@@ -9,7 +9,7 @@
 	<div class="table-row">
 		<div class="vertical-bottom left-margin">
 			<div>
-				<a href="#fancybox-calculate-the-lot" onclick="$('.nav-list-tabs li a').eq(0).click();" class="btn btn-transparent text-uppercase fancybox-full-screen">Рассчитать партию</a>
+				<a href="#fancybox-calculate-the-lot" onclick="$('.nav-list-tabs li a').eq(0).click();" class="btn btn-block btn-transparent text-uppercase fancybox-full-screen">Рассчитать партию</a>
 			</div>
 			<?php if(isset($navigatePanelSetting['isSupPage'])) : ?>
 			<div class="fullpage-nav">

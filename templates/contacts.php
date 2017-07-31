@@ -9,7 +9,7 @@ Template Post Type: page
 <div class="contacts">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4 col-xs-offset-1 full-window-height">
+			<div class="col-sm-4 col-sm-offset-1 col-xs-12 full-window-height">
 				<div class="wrap-vertical-position">
 					<div class="vertical-middle">
 						<h1>Контактная информация</h1>
@@ -23,7 +23,7 @@ Template Post Type: page
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-4 col-xs-offset-1 full-window-height">
+			<div class="col-sm-4 col-sm-offset-1 col-xs-12 full-window-height">
 				<div id="map" lat="54.537816" lng="36.296101" placemark-width="34" placemark-height="40" placemark="<?php echo get_bloginfo('template_url'); ?>/img/placemark.png">					
 				</div>
 			</div>

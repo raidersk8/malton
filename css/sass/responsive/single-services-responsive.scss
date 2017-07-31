@@ -1,0 +1,10 @@
+@media (max-width: $media-sm-min-width) {
+	.single-services .left-part {
+		position: relative;
+	}
+	
+	.single-services .content .img {
+		top: 0;
+		max-width: 100%;
+	}
+}

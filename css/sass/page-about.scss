@@ -15,6 +15,10 @@
 .page-about .text-content {
 	margin-bottom: 45px;
 }
+.page-about .text-content img {
+	max-width: 100%;
+	height: auto;
+}
 .page-about .list .item .img {
 	display: table;
 	width: 100%;
@@ -24,16 +28,12 @@
 .page-about .list .item {
 	margin-bottom: 55px;
 }
-.page-about .partners {
-	margin: 0 -7px;
-}
 .page-about .partners .img {
 	height: 63px;
 	display: inline-block;
-	padding: 0 7px;
 }
-.page-about .partners .img:last-child {
-	float: right;
+.page-about .partners .img img {
+	max-width: 100%;
 }
 .page-about-bg-border {
 	position: absolute;

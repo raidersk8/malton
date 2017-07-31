@@ -3,36 +3,44 @@
 	<div class="page single-services">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-2 col-xs-offset-1">
+				<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-10">
 					<div class="left-part">
 						<div class="h1 main-title">УСЛУГИ<br />И ЦЕНЫ</div>
 						<?php $query = new WP_Query( array( 'post_type' => 'services', 'posts_per_page' => -1 ) ); ?>
-						<div class="menu">
+						<div class="menu hidden-xs">
 							<ul>
 								<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 									<li class="<?php if($actId == get_the_ID()) echo 'current-menu-item'; ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 								<?php endwhile; wp_reset_postdata(); ?>
 							</ul>
 						</div>
+						<?php $query = new WP_Query( array( 'post_type' => 'services', 'posts_per_page' => -1 ) ); ?>
+						<select class="selectpicker-ref visible-xs"  data-width="100%">
+							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+								<option <?php if($actId == get_the_ID()) echo 'selected'; ?> value="<?php the_permalink(); ?>"><?php the_title(); ?></option>
+							<?php endwhile; wp_reset_postdata(); ?>
+						</select>
 					</div>
 				</div>
-				<div class="col-xs-5 col-xs-offset-1">
+				<div class="col-lg-5 col-md-6 col-md-offset-1 col-sm-7 col-xs-10">
 					<div class="content" data-stellar-offset-parent="true">
-						<div class="square" data-stellar-ratio="0.95"></div>
 						<div class="inner">
-							<div class="row">
-								<div class="col-xs-5 col-xs-pull-2 no-p">
-									<img class="img" src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-350-auto' ); ?>" />
-								</div>
-								<div class="col-xs-7">
-									<ul class="list">
-										<?php if( have_rows('list') ): ?>
-											<?php while ( have_rows('list') ) : the_row(); ?>		
-												<li>— <?php the_sub_field('text'); ?></li>
-											<?php endwhile; ?>
-										<?php endif; ?>
-									</ul>
-									<div class="price">от <?php the_field('price'); ?> &#8381;/шт</div>
+							<div class="top-part">
+								<div class="square hidden-xs" data-stellar-ratio="0.95"></div>
+								<div class="row">
+									<div class="col-sm-5 col-sm-pull-2 no-p yes-p-xs col-xs-10">
+										<img class="img" src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'image-350-auto' ); ?>" />
+									</div>
+									<div class="col-sm-7 col-xs-10">
+										<ul class="list">
+											<?php if( have_rows('list') ): ?>
+												<?php while ( have_rows('list') ) : the_row(); ?>		
+													<li>— <?php the_sub_field('text'); ?></li>
+												<?php endwhile; ?>
+											<?php endif; ?>
+										</ul>
+										<div class="price">от <?php the_field('price'); ?> &#8381;/шт</div>
+									</div>
 								</div>
 							</div>
 							<?php the_content(); ?>

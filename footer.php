@@ -4,12 +4,12 @@
 				<div class="vertical-middle">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-4 col-xs-offset-1">
+							<div class="col-sm-4 col-sm-offset-1 col-xs-11">
 								<div class="h1">Заявка на Расчёт партии</div>
 								<p>Заполните форму справа используя добавление продукции построчно, либо загрузите файл с техническим заданием. Наш специалист рассчитает примерную стоимость и отправит коммерческое предложение на указанный вами email и свяжется по телефону.</p>
 								<p>Нажимая кнопку «Отправить запрос» вы принимаете все условия и  соглашаетесь с   порядком обработки персональных данных.</p>
 							</div>
-							<div class="col-xs-6 col-xs-offset-1">
+							<div class="col-sm-6 col-sm-offset-1 col-xs-11">
 								<ul class="nav-list-tabs">
 									<li class="active"><a href="#form" data-toggle="tab">Заполнить форму</a></li>
 									<li><a href="#file" data-toggle="tab">Отправить файл</a></li>
@@ -35,7 +35,7 @@
 	
 	<div style="display: none" id="template-item-order">
 		<div class="row item-order">
-			<div class="col-xs-4">
+			<div class="col-sm-4 col-xs-12">
 				<div class="form-group">
 					<label class="btn-block">Выберите продукцию</label>
 					<select class="selectpicker-fancybox-append"  data-width="100%">
@@ -46,7 +46,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-sm-6 col-xs-12">
 				<label class="btn-block">Размер партии (шт.)</label>
 				<div class="form-group">
 					<div class="wrap-input-slider">
@@ -60,10 +60,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-2">
-				<label class="btn-block">&nbsp;</label>
+			<div class="col-sm-2 col-xs-12">
+				<label class="btn-block hidden-xs">&nbsp;</label>
 				<a href="#" class="delete-icon delete-item"></a>
 				<a href="#" class="add-icon add-item"></a>
+				<label class="btn-block visible-xs">&nbsp;</label>
 			</div>
 		</div>
 	</div>

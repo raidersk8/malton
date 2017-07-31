@@ -60,7 +60,10 @@ label {
 	color: #907E8A;
 	line-height: 14px;
 }
-
+.btn.btn-block {
+	padding-left: 0;
+	padding-right: 0;
+}
 .btn {
 	font-size: 16px;
 	border-radius: 0;

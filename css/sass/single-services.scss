@@ -36,9 +36,12 @@
 	font-family: 'Roboto Condensed', sans-serif;
 	margin-bottom: 21px;
 }
+.single-services .content .top-part {
+	position: relative;
+}
 .single-services .content .square {
 	position: absolute;
-	top: 280px;
+	bottom: 63px;
 	left: 0px !important;
 	width: 328px;
 	height: 280px;
